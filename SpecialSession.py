@@ -75,17 +75,17 @@ class SpecialSession:
 		chamber = lambda ds: ['House', 'Representative'] if 'house' in ds else ['Senate', 'Senator']
 		name = lambda str: [tkn for tkn in str.split("@")[0].split('.')]
 
-		clean_set = [chamber(bs[3])[1],	   #Title
+		clean_set = [chamber(bs[3])[1],    #Title
 						name(bs[3])[0],    #First Name
 						name(bs[3])[-1],   #Last Name
 						party_map[bs[0]],  #Party
 						chamber(bs[3])[0], #Chamber
-						bs[1],			   #Street Address / Room Number
-						"",				   #City
-						"",				   #State
-						"",				   #Zipcode
-						bs[2],			   #Phone Number
-						bs[3]]			   #Email
+						bs[1],             #Street Address / Room Number
+						"",                #City
+						"",                #State
+						"",                #Zipcode
+						bs[2],             #Phone Number
+						bs[3]]             #Email
 
 		for i in range(len(clean_set)):
 
