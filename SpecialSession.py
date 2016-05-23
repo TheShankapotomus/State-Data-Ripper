@@ -61,7 +61,7 @@ class SpecialSession:
 
 					tag_data.extend(data
 
-									for data in tag.stripped_strings
+										for data in tag.stripped_strings
 
 											if data not in tag_data)
 
