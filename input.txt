@@ -1,0 +1,4 @@
+https://malegislature.gov/People/House
+https://malegislature.gov/People/Senate
+DEFAULTS: ["", "", "", "", "", "24 Beacon St. ", "Boston", "MA", '02133', "", ""]
+HEADER: ["Title", "First Name", "Last Name", "Party", "Chamber", "Street Address", "City", "State", "Zipcode", "Phone", "Email"]
